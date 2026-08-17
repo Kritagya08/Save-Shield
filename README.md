@@ -1,11 +1,5 @@
 # Save Shield — Emergency Safety Platform
 
-[![CI Status](https://img.shields.io/badge/CI-Passing-emerald?style=for-the-badge&logo=githubactions)](https://github.com/)
-[![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](./LICENSE)
-
 > **Emergency protection that keeps working when connectivity doesn't.**
 
 Save Shield is a full-stack web application demonstrating an emergency safety system that works in both online and offline situations. When internet connectivity is unavailable, it uses a Bluetooth relay mesh network (simulated in the browser) to forward SOS alerts through nearby devices to reach emergency services.

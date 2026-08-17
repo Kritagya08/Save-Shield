@@ -2,20 +2,7 @@
   "name": "save-shield",
   "private": true,
   "version": "1.0.0",
-  "description": "Emergency protection that keeps working when connectivity doesn't. Full-stack online/offline emergency safety web application.",
   "type": "module",
-  "license": "MIT",
-  "keywords": [
-    "emergency-safety",
-    "sos-alert",
-    "bluetooth-relay",
-    "mesh-network",
-    "women-safety",
-    "react",
-    "typescript",
-    "supabase",
-    "tailwind-css"
-  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
