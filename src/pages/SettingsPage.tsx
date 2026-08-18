@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Settings, Save, AlertTriangle, Download, Trash2, Shield, Bell, Zap, Info } from 'lucide-react';
+import { Settings, Save, AlertTriangle, Download, Trash2, Shield, Bell, Zap, Info, Volume2 } from 'lucide-react';
 import toast from 'react-hot-toast';
+import { audioAlert } from '../utils/audioAlert';
 
 export default function SettingsPage() {
   const [settings, setSettings] = useState(() => {
@@ -153,6 +154,15 @@ export default function SettingsPage() {
             </h2>
             
             <div className="flex flex-col gap-3">
+              <button 
+                onClick={() => {
+                  audioAlert.playEmergencySiren(2);
+                  toast.success('Playing test emergency siren');
+                }} 
+                className="flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 rounded-lg transition-colors border border-amber-500/30 font-medium"
+              >
+                <Volume2 size={18} /> Test Audio Emergency Siren
+              </button>
               <button onClick={exportData} className="flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-slate-700 hover:bg-slate-600 text-slate-200 rounded-lg transition-colors border border-slate-600">
                 <Download size={18} /> Export Emergency History
               </button>
